@@ -40,6 +40,7 @@ app.get(/^\/(\d{5})$/, function (req, res, next) {
     });
 });
 
+//Route error
 app.use(function (req, res) {
     res.status(404).render("404");
 });
